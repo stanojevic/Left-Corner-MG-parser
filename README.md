@@ -4,7 +4,7 @@ This is the implementation of the Arc-Eager Left-Corner Minimalist Grammar parse
 
       Title   : A sound and complete Left-Corner parsing for Minimalist Grammars
       Authors : Miloš Stanojević and Edward Stabler
-      In      : Proceedings of ACL 2018 CogACLL Workshop
+      In      : Proceedings of ACL 2018 CogACLL Workshop on
                 Cognitive Aspects of Computational Language Learning and Processing
 
 ## Usage
