@@ -28,8 +28,8 @@ QUICK-START:
    that looks like this:
 
 %%%% BEGIN SESSION
-> cd pl
-> swipl
+`> cd pl
+`> swipl
 Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -57,10 +57,10 @@ L = [shift([], [=v, c]), lc1(merge1), shift(['Bibi'], [d]), c1(lc2(merge2)), shi
 Now uncommenting "verbose" ...
 
 %%%% BEGIN SESSION
-> cd pl
-> swipl
+`> cd pl
+`> swipl
 
-> swipl
+`> swipl
 Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -137,7 +137,7 @@ true
 3 ?- ^D
 
 % halt
-> 
+`> 
 %%%% END SESSION
 
 Trees can be built by giving tree arguments to syntactic features in the grammars.
