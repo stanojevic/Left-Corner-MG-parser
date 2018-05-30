@@ -1,0 +1,46 @@
+wm minsize . 20 20
+frame .f
+canvas .c -xscrollcommand {.hscroll set} -yscrollcommand {.vscroll set}	-scrollregion {-10p -10p 1000p 1000p} -bg white
+scrollbar .hscroll -orient horizontal
+pack .hscroll -side bottom -fill x -in .f
+frame .szb
+pack .szb -side bottom -fill x -in .f
+button .szb.1 -text "dump ps" -font 6x10 -command {.c postscript -colormode gray -file "ltree.ps"}
+pack .szb.1 -side right
+label .szb.2 -text " wish_tree.pl" -font -*-times-bold-r-normal--12-120-*'
+pack .szb.2 -side left
+pack .c -side top -expand 1 -fill both -in .f
+scrollbar .vscroll -orient vertical
+pack .vscroll -side right -fill y
+pack .f -side left -expand 1 -fill both
+.vscroll config -command {.c yview}
+.hscroll config -command {.c xview}
+wm geometry . 380x428-5+40
+.c config -scrollregion {-10p -10p 916p 666p}
+.c create text 67p 0p -text {*} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 67p 12p 51p 22p
+.c create text 51p 22p -text {e::=v c} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 67p 12p 83p 22p
+.c create text 83p 22p -text {*} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 83p 34p 68p 44p
+.c create text 68p 44p -text {*} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 68p 56p 40p 66p
+.c create text 40p 66p -text {knows::=c =d v} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 68p 56p 94p 66p
+.c create text 94p 66p -text {o} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 94p 78p 94p 88p
+.c create text 94p 88p -text {*} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 94p 100p 79p 110p
+.c create text 79p 110p -text {e::=v c} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 94p 100p 110p 110p
+.c create text 110p 110p -text {*} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 110p 122p 95p 132p
+.c create text 95p 132p -text {*} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 95p 144p 56p 154p
+.c create text 56p 154p -text {likes::=d =d v} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 95p 144p 134p 154p
+.c create text 134p 154p -text {what::d -wh} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 110p 122p 126p 132p
+.c create text 126p 132p -text {Aca::d} -anchor n -font "-*-times-bold-r-normal--12-120-*"
+.c create line 83p 34p 98p 44p
+.c create text 98p 44p -text {Bibi::d} -anchor n -font "-*-times-bold-r-normal--12-120-*"
