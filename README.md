@@ -28,7 +28,6 @@ QUICK-START:
    that looks like this:
 
               %%%% BEGIN SESSION
-              > cd pl
               > swipl
               Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
               SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -57,7 +56,6 @@ QUICK-START:
 Now uncommenting "verbose" ...
 
               %%%% BEGIN SESSION
-              > cd pl
               > swipl
               
               > swipl
